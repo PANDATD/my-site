@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | Tejas's Flask Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-primary mb-4 text-center">My Projects</h2>
+
+    <div class="row">
+        {% for project in project_list %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                    <i class="{{ project.projectIcon }} text-primary"></i>
+                    <h5 class="card-title mt-3 fw-bold">{{ project.projectTitle }}</h5>
+                    <p class="card-text">{{ project.projectDescription }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}About Tejas Dixit - Python, Flask & Go Developer{% endblock %}
+{% block meta_description %}Meet Tejas Dixit, a skilled Python and Flask developer passionate about Linux, Go, data science, and India’s tech heritage. Based in Pune.{% endblock %}
+{% block og_title %}About Tejas Dixit{% endblock %}
+{% block og_description %}Discover Tejas Dixit’s technical expertise in backend development, web architecture, and digital projects rooted in Bharatiya culture and modern engineering.{% endblock %}
+
+{% block content %}
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 text-center">
+        <img src="{{ url_for('static', filename='img/tejas-dixit.jpg') }}"
+             class="img-fluid rounded-4 shadow-sm"
+             alt="Tejas Dixit" style="max-height: 400px; object-fit: cover;" />
+      </div>
+      <div class="col-lg-7">
+        <h1 class="display-6 fw-bold text-primary mb-4">Hey, I’m Tejas Dixit 👋</h1>
+        <p class="lead text-muted text-justify" style="text-indent: 2em;">
+          A passionate Python backend developer from Pune 🇮🇳, I specialize in <strong>Flask, SQLAlchemy, Go programming, and Linux environments</strong>. My projects blend solid architecture with Bharat-rooted narratives.
+        </p>
+        <p class="text-muted text-justify" style="text-indent: 2em;">
+          My technical canvas ranges from crafting APIs and SEO-optimized platforms to exploring cultural digitization using open-source tools. I follow a minimalist, memory-efficient, testable code style that aligns with both performance and Dharma.
+        </p>
+        <div class="mt-4">
+          <a href="{{ url_for('static', filename='docs/Tejas_Dixit_Resume.pdf') }}"
+             class="btn btn-dark rounded-pill shadow-sm px-4 py-2"
+             target="_blank" rel="noopener">
+            📄 Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h2 class="h5 text-primary mb-3">🛠️ Technical Expertise</h2>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2">• Python, Flask, Jinja2, SQLAlchemy</li>
+              <li class="mb-2">• Go (Golang) REST APIs, net/http</li>
+              <li class="mb-2">• Linux (Pop!_OS, Fedora), Bash scripting</li>
+              <li class="mb-2">• Jupyter, Pandas, data cleaning pipelines</li>
+              <li class="mb-2">• Bootstrap 5, HTML5, SEO-first design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h2 class="h5 text-primary mb-3">💡 Cultural Interests</h2>
+            <ul class="list-unstyled text-muted">
+              <li class="mb-2">• Hindu culture, Veer Savarkar studies</li>
+              <li class="mb-2">• Marathi & Sanskrit literature</li>
+              <li class="mb-2">• Political tech narratives & Indian politics</li>
+              <li class="mb-2">• Dharma-inspired minimalism in code</li>
+              <li class="mb-2">• Teaching open-source tools in Bharat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
