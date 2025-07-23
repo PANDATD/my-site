@@ -129,6 +129,6 @@ wcwidth==0.2.13
 webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
-Werkzeug==3.0.1
+Werkzeug==3.0.6
 WTForms==3.2.1
 zipp==3.22.0
