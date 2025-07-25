@@ -7,6 +7,8 @@ SITE_CONFIG = {
     "site_author": "Tejas Dixit",
     "twitter_handle": "https://x.com/TejasDixit2001",
     "github_url": "https://github.com/pandatd",
+    "instagram_url": "https://www.instagram.com/_pandatd",
+    "medium_url": "https://pandatd.medium.com/",
     "linkedin_url": "https://www.linkedin.com/in/tejas-dixit17",
     "default_image": "/static/images/og-image.jpg",
     "favicon_svg": "/static/images/favicon.svg",
