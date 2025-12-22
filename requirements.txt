@@ -20,7 +20,7 @@ WTForms==3.2.1
 # REST APIs & Serialization
 Flask-RESTful==0.3.10
 Flask-Marshmallow==1.2.1
-marshmallow==3.22.0
+marshmallow==3.26.2
 
 # Security
 Flask-Bcrypt==1.0.1
