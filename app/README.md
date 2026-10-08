@@ -1,50 +1,28 @@
-# Tejas's Flask Website
+# Application
 
-A clean, minimalist, SEO-friendly, and mobile-first portfolio website built using **Flask** and **Bootstrap 5**.  
-This project demonstrates best practices in performance optimization, accessibility, and modern web development.
+This directory contains the Flask application used by the personal website.
 
----
+## Main components
 
-## 🚀 Features
+- `__init__.py` — Flask application factory, database and login manager setup.
+- `auth/` — registration, login and logout routes.
+- `contact/` — contact form routes and forms.
+- `main/` — main site routes and portfolio content.
+- `models.py` — SQLAlchemy models.
+- `templates/` — Jinja templates.
+- `static/` — static assets.
 
-- Flask 2.x web framework
-- Bootstrap 5 responsive layout
-- Google Fonts (Inter) for modern typography
-- Font Awesome 6 icons
-- SEO optimized meta tags (Open Graph, Twitter Cards, Structured Data)
-- Accessible with ARIA roles and keyboard navigation support
-- Clean `base.html` for easy template inheritance
-- Custom `404` error page
-- Simple CSS for clarity and readability
-- Pre-configured for Core Web Vitals performance
+## Run the application
 
----
-
-## 📂 Project Structure
+Run these commands from the repository root:
 
 ```bash
-
-/your_flask_app/
-├── static/
-│ ├── css/
-│ │ └── styles.css
-│ └── images/
-│ ├── og-image.jpg
-│ └── favicon.svg
-│
-├── templates/
-│ ├── base.html
-│ ├── index.html
-│ ├── about.html
-│ ├── projects.html
-│ ├── contact.html
-│ ├── privacy.html
-│ └── 404.html
-│
-├── app.py
-└── requirements.txt
-```
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+source venv/bin/activate
 pip install -r requirements.txt
+python run.py
+```
+
+On Windows, activate the environment with `venv\Scripts\activate`.
+
+See the repository root `README.md` for the complete setup guide.
